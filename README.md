@@ -11,15 +11,17 @@ component emitting them and the test reading them back.
 
 Each package installs on its own. Nothing here is a design system, and nothing here styles anything.
 
+Packages publish under the `@firu-daniel` scope; `straightedge` is the repository they live in.
+
 ## Packages
 
 | Package | What it is | Status |
 |---|---|---|
-| [`@straightedge/agent-qa-attrs`](packages/agent-qa-attrs) | A `data-qa-*` contract that makes an app deterministically drivable by end-to-end tests and browser-driving agents | Unreleased |
-| `@straightedge/virtual-list` | A virtualisation engine with reversed-chat anchoring — the list stays put while content grows above it | Planned |
-| `@straightedge/cached-image` | Image caching that survives a cache bust without serving a stale byte | Planned |
-| `@straightedge/runtime-hooks` | Environment and performance hooks: keyboard inset, measured height, connectivity, tab visibility, scroll locking | Planned |
-| `@straightedge/micro-interactions` | Small animated controls with their timing and reduced-motion behaviour already argued out | Planned |
+| [`@firu-daniel/agent-qa-attrs`](packages/agent-qa-attrs) | A `data-qa-*` contract that makes an app deterministically drivable by end-to-end tests and browser-driving agents | Unreleased |
+| `@firu-daniel/virtual-list` | A virtualisation engine with reversed-chat anchoring — the list stays put while content grows above it | Planned |
+| `@firu-daniel/cached-image` | Image caching that survives a cache bust without serving a stale byte | Planned |
+| `@firu-daniel/runtime-hooks` | Environment and performance hooks: keyboard inset, measured height, connectivity, tab visibility, scroll locking | Planned |
+| `@firu-daniel/micro-interactions` | Small animated controls with their timing and reduced-motion behaviour already argued out | Planned |
 
 [`ROADMAP.md`](ROADMAP.md) has what is coming and in what order.
 
@@ -37,7 +39,7 @@ write-up for that bug is in the source, not lost in a commit message.
 ## Using a package
 
 ```bash
-npm i @straightedge/agent-qa-attrs
+npm i @firu-daniel/agent-qa-attrs
 ```
 
 Each package has its own README with its API and its arguments. React 18+ where React is involved;

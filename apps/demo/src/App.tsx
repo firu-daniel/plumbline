@@ -2,12 +2,12 @@
  * The demo site.
  *
  * One section per package. Each section runs the real package — the Vite config
- * aliases every `@straightedge/*` import at this package's source — and shows what
+ * aliases every `@firu-daniel/*` import at this package's source — and shows what
  * it emits, so the page doubles as the surface an end-to-end run drives.
  */
 
 import { useState } from 'react';
-import { QaScope, qaAttr, qaSelector, useQaAttr } from '@straightedge/agent-qa-attrs';
+import { QaScope, qaAttr, qaSelector, useQaAttr } from '@firu-daniel/agent-qa-attrs';
 
 type UploadStatus = 'idle' | 'loading' | 'ready' | 'error';
 
@@ -42,7 +42,7 @@ export const App = () => {
 
       <section className="section" {...qaAttr({ id: 'section-agent-qa-attrs' })}>
         <h2>
-          <code>@straightedge/agent-qa-attrs</code>
+          <code>@firu-daniel/agent-qa-attrs</code>
         </h2>
         <p>
           A <code>data-qa-*</code> contract that makes this page drivable by an end-to-end test or a

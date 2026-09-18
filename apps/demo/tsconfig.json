@@ -7,7 +7,7 @@
     "noEmit": false,
     "types": ["vite/client"],
     "paths": {
-      "@straightedge/*": ["../../packages/*/src/index.ts"]
+      "@firu-daniel/*": ["../../packages/*/src/index.ts"]
     }
   },
   "include": ["src/**/*"],
