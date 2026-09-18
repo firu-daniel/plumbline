@@ -32,7 +32,10 @@ jobs:
       - uses: changesets/action@v1
         with:
           version: npm run version-packages
-          publish: npm run release
+          # Publishing needs the registry token. Until that secret exists the
+          # action still opens and maintains the version pull request, which is
+          # the half of the release flow that does not need credentials.
+          publish: ${{ secrets.NPM_TOKEN != '' && 'npm run release' || '' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_CONFIG_PROVENANCE: 'true'
