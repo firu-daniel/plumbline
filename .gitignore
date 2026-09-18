@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.DS_Store
+.env
+.env.*
+
+# Staged, sanitized copies of source a harness extraction run reads from.
+# Never committed: the source repository is private, and what lands in a
+# package is the sanitized extraction, not the original file.
+.extraction-source/
+.tsbuild/

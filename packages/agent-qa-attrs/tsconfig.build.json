@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // tsup's declaration build runs a plain program rather than a project
+    // reference graph, so the project-mode options have to come back off.
+    "composite": false,
+    "declarationMap": false,
+    "incremental": false
+  },
+  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx"]
+}

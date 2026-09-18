@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    // Type-checking output only. The published build is tsup's, out of
+    // `tsconfig.build.json`; keeping the two apart is what stops `tsc -b` and
+    // `tsup` writing different artifacts into the same `dist/`.
+    "outDir": ".tsbuild",
+    "tsBuildInfoFile": ".tsbuild/.tsbuildinfo"
+  },
+  "include": ["src/**/*"]
+}
