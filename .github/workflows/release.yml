@@ -40,3 +40,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_CONFIG_PROVENANCE: 'true'
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # `changeset publish` tags each published version in the runner's clone,
+      # and changesets/action@v1 is supposed to push those tags and open a
+      # GitHub release per tag. It does neither here: it recognises a publish by
+      # parsing the CLI's stdout, and changesets 3's renderer no longer prints
+      # the line that parser looks for, so the action concludes nothing was
+      # published. 0.1.0 reached npm with no tag behind it because of exactly
+      # that. Pushing whatever tags the step left behind costs one line and does
+      # not care whether the parser ever catches up.
+      - name: Push the tags the publish created
+        run: git push origin --tags
