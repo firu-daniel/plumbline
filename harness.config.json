@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "projectName": "plumbline",
+  "defaultBranch": "main",
+  "protectedBranches": [
+    "main"
+  ],
+  "stateDir": "sdlc-harness",
+  "appDir": ".",
+  "scriptsDir": "scripts",
+  "githooksDir": "githooks",
+  "agentModel": "opus",
+  "pushEnvPath": ".claude/push-notify.env",
+  "detection": {
+    "preset": "monorepo",
+    "signal": "monorepo:workspaces-key",
+    "evidence": "package.json#workspaces",
+    "commandFamily": "npm"
+  },
+  "layers": [
+    {
+      "name": "general",
+      "path": ".",
+      "conventions": ".claude/context/conventions.md"
+    }
+  ],
+  "commands": {
+    "typecheck": "bash scripts/typecheck.sh",
+    "test": "bash scripts/test.sh",
+    "build": "npm run build",
+    "devServer": "bash scripts/start-dev-server.sh",
+    "depInstall": "npm ci"
+  },
+  "phases": {
+    "qa": true,
+    "docs": true,
+    "parity": false
+  },
+  "qa": {
+    "driver": "web-playwright",
+    "portSeed": 3001,
+    "credentialsPath": ".claude/qa-accounts.env"
+  },
+  "docs": {
+    "root": "docs"
+  }
+}
