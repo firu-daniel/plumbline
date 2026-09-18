@@ -1,11 +1,11 @@
-# `@plumbline/agent-qa-attrs`
+# `@firu-daniel/agent-qa-attrs`
 
 A `data-qa-*` attribute contract that makes a React application deterministically drivable — by an
 end-to-end test, and by a browser-driving agent that has to find an element without being told where
 it is on screen.
 
 ```bash
-npm i @plumbline/agent-qa-attrs
+npm i @firu-daniel/agent-qa-attrs
 ```
 
 ## Why an attribute contract rather than test ids scattered by hand
@@ -35,7 +35,7 @@ name invented at a call site.
 ## Emitting them
 
 ```tsx
-import { qaAttr } from '@plumbline/agent-qa-attrs';
+import { qaAttr } from '@firu-daniel/agent-qa-attrs';
 
 <button {...qaAttr({ id: 'login-submit' })}>Continue</button>
 <span {...qaAttr({ id: 'balance', value: balance })}>{formatted}</span>
@@ -52,7 +52,7 @@ Every id carries the area it belongs to, so two features never collide on a bare
 that prefix at each call site is a rule someone has to remember; a scope makes it structural.
 
 ```tsx
-import { QaScope, useQaAttr } from '@plumbline/agent-qa-attrs';
+import { QaScope, useQaAttr } from '@firu-daniel/agent-qa-attrs';
 
 const Submit = () => <button {...useQaAttr({ id: 'submit' })}>Continue</button>;
 
@@ -68,7 +68,7 @@ element of its own, so dropping one into a layout cannot change the DOM a test i
 ## Reading them back
 
 ```ts
-import { qaSelector } from '@plumbline/agent-qa-attrs/core';
+import { qaSelector } from '@firu-daniel/agent-qa-attrs/core';
 
 await page.click(qaSelector({ id: 'login-submit' }));
 await page.waitForSelector(qaSelector({ id: 'upload', status: 'ready' }));

@@ -1,24 +1,27 @@
-# plumbline
+# straightedge
 
 React primitives that encode **mechanism, not markup**.
 
-A plumb line is the oldest instrument for telling true from nearly-true. These packages are the parts
-of an application where "nearly right" costs you a bug report six months later: virtualised lists
-that must not drift while the content above them grows, image caching that must not serve a stale
-byte after a cache bust, test attributes that must mean the same thing to the component emitting them
-and the test reading them back.
+A straightedge has no scale on it. Its whole job is to answer one question — is this true, or only
+nearly true — and it is the tool you reach for where "nearly" is the expensive part. These packages
+are the parts of an application where nearly right costs you a bug report six months later:
+virtualised lists that must not drift while the content above them grows, image caching that must
+not serve a stale byte after a cache bust, test attributes that must mean the same thing to the
+component emitting them and the test reading them back.
 
 Each package installs on its own. Nothing here is a design system, and nothing here styles anything.
+
+Packages publish under the `@firu-daniel` scope; `straightedge` is the repository they live in.
 
 ## Packages
 
 | Package | What it is | Status |
 |---|---|---|
-| [`@plumbline/agent-qa-attrs`](packages/agent-qa-attrs) | A `data-qa-*` contract that makes an app deterministically drivable by end-to-end tests and browser-driving agents | Unreleased |
-| `@plumbline/virtual-list` | A virtualisation engine with reversed-chat anchoring — the list stays put while content grows above it | Planned |
-| `@plumbline/cached-image` | Image caching that survives a cache bust without serving a stale byte | Planned |
-| `@plumbline/runtime-hooks` | Environment and performance hooks: keyboard inset, measured height, connectivity, tab visibility, scroll locking | Planned |
-| `@plumbline/micro-interactions` | Small animated controls with their timing and reduced-motion behaviour already argued out | Planned |
+| [`@firu-daniel/agent-qa-attrs`](packages/agent-qa-attrs) | A `data-qa-*` contract that makes an app deterministically drivable by end-to-end tests and browser-driving agents | Unreleased |
+| `@firu-daniel/virtual-list` | A virtualisation engine with reversed-chat anchoring — the list stays put while content grows above it | Planned |
+| `@firu-daniel/cached-image` | Image caching that survives a cache bust without serving a stale byte | Planned |
+| `@firu-daniel/runtime-hooks` | Environment and performance hooks: keyboard inset, measured height, connectivity, tab visibility, scroll locking | Planned |
+| `@firu-daniel/micro-interactions` | Small animated controls with their timing and reduced-motion behaviour already argued out | Planned |
 
 [`ROADMAP.md`](ROADMAP.md) has what is coming and in what order.
 
@@ -36,7 +39,7 @@ write-up for that bug is in the source, not lost in a commit message.
 ## Using a package
 
 ```bash
-npm i @plumbline/agent-qa-attrs
+npm i @firu-daniel/agent-qa-attrs
 ```
 
 Each package has its own README with its API and its arguments. React 18+ where React is involved;

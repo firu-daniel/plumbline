@@ -1,15 +1,15 @@
 {
-  "name": "plumbline",
+  "name": "straightedge",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "description": "React primitives that encode mechanism, not markup.",
   "license": "MIT",
   "author": "firu-daniel",
-  "homepage": "https://github.com/firu-daniel/plumbline",
+  "homepage": "https://github.com/firu-daniel/straightedge",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/firu-daniel/plumbline.git"
+    "url": "git+https://github.com/firu-daniel/straightedge.git"
   },
   "workspaces": [
     "packages/*",
@@ -26,7 +26,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "dev": "npm run dev --workspace @plumbline/demo",
+    "dev": "npm run dev --workspace straightedge-demo",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "npm run build && changeset publish"

@@ -11,11 +11,11 @@ while building an earlier package says it should.
 
 | Package | What it is, and the invariant it exists to hold | Status |
 |---|---|---|
-| `@plumbline/agent-qa-attrs` | A `data-qa-*` contract shared by the component that emits an attribute and the test that reads it back, so the two cannot drift. Scoped ids, a status token to wait on, a selector builder for the reading side. | In progress |
-| `@plumbline/virtual-list` | A virtualisation engine with **reversed-chat anchoring**: the viewport holds its position while content is prepended above it, across variable row heights and asynchronous measurement. The flagship, and the one mechanism here with no good equivalent on npm. | Open |
-| `@plumbline/cached-image` | Image caching with a cache key that changes exactly when the bytes do — no stale image after a bust, no re-fetch after a re-render — and a size estimate that does not lie to a layout. | Open |
-| `@plumbline/runtime-hooks` | Environment and performance hooks an application keeps rewriting: keyboard inset from `visualViewport`, measured height over a callback-ref `ResizeObserver`, connectivity, tab visibility, body scroll locking. SSR-defensive throughout. | Open |
-| `@plumbline/micro-interactions` | Small animated controls — a play/pause morph, an animated bubble button, expandable rich text — with their timing, reduced-motion behaviour and style-injection already argued out. | Open |
+| `@firu-daniel/agent-qa-attrs` | A `data-qa-*` contract shared by the component that emits an attribute and the test that reads it back, so the two cannot drift. Scoped ids, a status token to wait on, a selector builder for the reading side. | In progress |
+| `@firu-daniel/virtual-list` | A virtualisation engine with **reversed-chat anchoring**: the viewport holds its position while content is prepended above it, across variable row heights and asynchronous measurement. The flagship, and the one mechanism here with no good equivalent on npm. | Open |
+| `@firu-daniel/cached-image` | Image caching with a cache key that changes exactly when the bytes do — no stale image after a bust, no re-fetch after a re-render — and a size estimate that does not lie to a layout. | Open |
+| `@firu-daniel/runtime-hooks` | Environment and performance hooks an application keeps rewriting: keyboard inset from `visualViewport`, measured height over a callback-ref `ResizeObserver`, connectivity, tab visibility, body scroll locking. SSR-defensive throughout. | Open |
+| `@firu-daniel/micro-interactions` | Small animated controls — a play/pause morph, an animated bubble button, expandable rich text — with their timing, reduced-motion behaviour and style-injection already argued out. | Open |
 
 ## Considered for later
 

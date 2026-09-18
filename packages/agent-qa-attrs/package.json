@@ -1,13 +1,13 @@
 {
-  "name": "@plumbline/agent-qa-attrs",
+  "name": "@firu-daniel/agent-qa-attrs",
   "version": "0.0.0",
   "description": "A data-qa-* attribute contract that makes a React app deterministically drivable by browser-driving agents and end-to-end tests.",
   "license": "MIT",
   "author": "firu-daniel",
-  "homepage": "https://github.com/firu-daniel/plumbline/tree/main/packages/agent-qa-attrs#readme",
+  "homepage": "https://github.com/firu-daniel/straightedge/tree/main/packages/agent-qa-attrs#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/firu-daniel/plumbline.git",
+    "url": "git+https://github.com/firu-daniel/straightedge.git",
     "directory": "packages/agent-qa-attrs"
   },
   "keywords": [
