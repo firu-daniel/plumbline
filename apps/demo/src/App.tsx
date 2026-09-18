@@ -2,12 +2,12 @@
  * The demo site.
  *
  * One section per package. Each section runs the real package — the Vite config
- * aliases every `@plumbline/*` import at this package's source — and shows what
+ * aliases every `@straightedge/*` import at this package's source — and shows what
  * it emits, so the page doubles as the surface an end-to-end run drives.
  */
 
 import { useState } from 'react';
-import { QaScope, qaAttr, qaSelector, useQaAttr } from '@plumbline/agent-qa-attrs';
+import { QaScope, qaAttr, qaSelector, useQaAttr } from '@straightedge/agent-qa-attrs';
 
 type UploadStatus = 'idle' | 'loading' | 'ready' | 'error';
 
@@ -36,13 +36,13 @@ export const App = () => {
   return (
     <main className="page">
       <header className="header">
-        <h1>plumbline</h1>
+        <h1>straightedge</h1>
         <p className="tagline">React primitives that encode mechanism, not markup.</p>
       </header>
 
       <section className="section" {...qaAttr({ id: 'section-agent-qa-attrs' })}>
         <h2>
-          <code>@plumbline/agent-qa-attrs</code>
+          <code>@straightedge/agent-qa-attrs</code>
         </h2>
         <p>
           A <code>data-qa-*</code> contract that makes this page drivable by an end-to-end test or a
@@ -114,8 +114,8 @@ export const App = () => {
       </section>
 
       <footer className="footer">
-        <a href="https://github.com/firu-daniel/plumbline" {...qaAttr({ id: 'footer-repository-link' })}>
-          github.com/firu-daniel/plumbline
+        <a href="https://github.com/firu-daniel/straightedge" {...qaAttr({ id: 'footer-repository-link' })}>
+          github.com/firu-daniel/straightedge
         </a>
       </footer>
     </main>

@@ -7,7 +7,7 @@
     "noEmit": false,
     "types": ["vite/client"],
     "paths": {
-      "@plumbline/*": ["../../packages/*/src/index.ts"]
+      "@straightedge/*": ["../../packages/*/src/index.ts"]
     }
   },
   "include": ["src/**/*"],

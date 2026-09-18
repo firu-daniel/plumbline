@@ -1,5 +1,5 @@
 ---
-'@plumbline/agent-qa-attrs': minor
+'@straightedge/agent-qa-attrs': minor
 ---
 
 First release: the `data-qa-*` contract — `qaAttr` for the emitting side, `qaSelector` for the

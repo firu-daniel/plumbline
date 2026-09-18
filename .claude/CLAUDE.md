@@ -1,4 +1,4 @@
-# plumbline
+# straightedge
 
 <!-- harness:setup-pending -->
 > **Setup is not finished.** The sections below are skeletons, and the analysis was declined at setup: they are yours to write by hand, and `/harness-analyze` still fills them if you change your mind. `/harness-analyze` is a command of the harness plugin, which `npx autonomous-sdlc-harness init` enabled for this repository in `.claude/settings.json`, so it exists in a session that resolves that plugin. In either case, the block can be deleted by hand once these sections are written.

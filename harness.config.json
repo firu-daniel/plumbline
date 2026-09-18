@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "projectName": "plumbline",
+  "projectName": "straightedge",
   "defaultBranch": "main",
   "protectedBranches": [
     "main"
